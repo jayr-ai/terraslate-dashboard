@@ -2,10 +2,179 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta http-equiv="refresh" content="0; url=/meta-report/" />
-<title>TerraSlate Paper</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+<title>TerraSlate · Analytics Hub</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: #05070d;
+    color: #f3f6fc;
+    font: 16px/1.6 "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .logo {
+    height: 96px;
+    width: auto;
+    margin: 0 auto 32px;
+    display: block;
+  }
+
+  h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0 0 12px;
+    letter-spacing: -0.02em;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    color: #a7b2c8;
+    margin: 0;
+  }
+
+  .dashboards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+  }
+
+  .dashboard-card {
+    background: #0d1220;
+    border: 2px solid #3b9eff;
+    border-radius: 16px;
+    padding: 32px;
+    text-decoration: none;
+    color: #f3f6fc;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dashboard-card:hover {
+    transform: translateY(-4px);
+    border-color: #4fc3ff;
+    box-shadow: 0 12px 32px rgba(79, 195, 255, 0.18);
+  }
+
+  .dashboard-card h2 {
+    margin: 0 0 12px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .dashboard-card p {
+    margin: 0 0 24px;
+    font-size: 14px;
+    color: #a7b2c8;
+    flex-grow: 1;
+  }
+
+  .dashboard-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #4fc3ff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .dashboard-link:hover {
+    color: #7fd8ff;
+  }
+
+  .arrow {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+
+  .coming-soon {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .coming-soon .dashboard-link {
+    color: #a7b2c8;
+  }
+
+  .badge {
+    display: inline-block;
+    background: #3b9eff;
+    color: #05070d;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    width: fit-content;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #a7b2c8;
+    font-size: 14px;
+  }
+</style>
 </head>
 <body>
-<p>Redirecting to <a href="/meta-report/">the Meta Ads report</a>.</p>
+<div class="container">
+  <div class="header">
+    <img class="logo" src="./assets/terraslate-logo.avif" alt="TerraSlate" />
+    <h1>TerraSlate</h1>
+    <p class="subtitle">Analytics Hub</p>
+  </div>
+
+  <div class="dashboards">
+    <!-- CEO Dashboard -->
+    <a href="./ceo-dashboard/" class="dashboard-card">
+      <div class="badge">Active</div>
+      <h2>CEO Dashboard</h2>
+      <p>Sales across channels, production tracker, marketing metrics, AirCall, Accounts Receivable, and team performance — all in one live view.</p>
+      <span class="dashboard-link">
+        Open Dashboard
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </span>
+    </a>
+
+    <!-- TerraSlate Meta Report -->
+    <a href="./meta-report/" class="dashboard-card">
+      <div class="badge">Active</div>
+      <h2>TerraSlate Meta Report</h2>
+      <p>Paid media performance analytics, campaign insights, and marketing ROAS tracking for Meta Ads.</p>
+      <span class="dashboard-link">
+        View Report
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </span>
+    </a>
+  </div>
+
+  <div class="footer">
+    <p>TerraSlate Paper · Analytics Hub</p>
+  </div>
+</div>
+
 </body>
 </html>
